@@ -1,4 +1,9 @@
-const getTheTitles = function() {
+const getTheTitles = function(arr) {
+    const newArr = [];
+
+    arr.forEach(x => newArr.push(x.title))
+
+    return newArrq
 
 };
 
