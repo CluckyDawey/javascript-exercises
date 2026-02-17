@@ -3,7 +3,7 @@ const getTheTitles = function(arr) {
 
     arr.forEach(x => newArr.push(x.title))
 
-    return newArrq
+    return newArr
 
 };
 

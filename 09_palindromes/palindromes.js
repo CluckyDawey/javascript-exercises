@@ -1,16 +1,10 @@
 const palindromes = function (str) {
     let targets = /\W/gi;
     
-    let newStr = str.replace(targets, "");
+    let newStr = str.replace(targets, "").toLowerCase();
+    let reversedStr = newStr.split("").reverse().join("").toLowerCase();
 
-    let reversedStr = newStr.split("").reverse().join("");
-
-    let fNewStr = newStr.toLowerCase();
-    let fReversedStr = reversedStr.toLowerCase();
-
-    return fNewStr === fReversedStr
-
-
+    return newStr === reversedStr
 };
 
 // Do not edit below this line
